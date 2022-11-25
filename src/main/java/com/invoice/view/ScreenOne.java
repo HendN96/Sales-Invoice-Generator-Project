@@ -52,10 +52,10 @@ public class ScreenOne extends javax.swing.JFrame {
         invoiceTableLabel = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         invoiceItemsTable = new javax.swing.JTable();
-        saveButton = new javax.swing.JButton();
-        saveButton.addActionListener(control);
-        cancelButton = new javax.swing.JButton();
-        cancelButton.addActionListener(control);
+        createNewItemButton = new javax.swing.JButton();
+        createNewItemButton.addActionListener(control);
+        deleteItemButton = new javax.swing.JButton();
+        deleteItemButton.addActionListener(control);
         invoiceNoLabel = new javax.swing.JLabel();
         invoiceDateLabel = new javax.swing.JLabel();
         customerNameLabel = new javax.swing.JLabel();
@@ -69,7 +69,7 @@ public class ScreenOne extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jScrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jScrollPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         invoicesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -112,9 +112,9 @@ public class ScreenOne extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(invoiceItemsTable);
 
-        saveButton.setText("Save");
+        createNewItemButton.setText("Create New Item");
 
-        cancelButton.setText("Cancel");
+        deleteItemButton.setText("Delete Item");
 
         jMenu1.setText("File");
 
@@ -169,10 +169,10 @@ public class ScreenOne extends javax.swing.JFrame {
                 .addComponent(newInvoiceButton)
                 .addGap(52, 52, 52)
                 .addComponent(deleteInvoiceButton)
-                .addGap(158, 158, 158)
-                .addComponent(saveButton)
-                .addGap(68, 68, 68)
-                .addComponent(cancelButton)
+                .addGap(126, 126, 126)
+                .addComponent(createNewItemButton)
+                .addGap(69, 69, 69)
+                .addComponent(deleteItemButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -208,8 +208,8 @@ public class ScreenOne extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(newInvoiceButton)
                     .addComponent(deleteInvoiceButton)
-                    .addComponent(saveButton)
-                    .addComponent(cancelButton))
+                    .addComponent(createNewItemButton)
+                    .addComponent(deleteItemButton))
                 .addGap(36, 36, 36))
         );
 
@@ -262,10 +262,11 @@ public class ScreenOne extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem MenuItem1;
     private javax.swing.JMenuItem MenuItem2;
-    private javax.swing.JButton cancelButton;
+    private javax.swing.JButton createNewItemButton;
     private javax.swing.JLabel customerNameLabel;
     private javax.swing.JLabel customerNameTitle;
     private javax.swing.JButton deleteInvoiceButton;
+    private javax.swing.JButton deleteItemButton;
     private javax.swing.JLabel invoiceDateLabel;
     private javax.swing.JLabel invoiceDateTitle;
     private javax.swing.JTable invoiceItemsTable;
@@ -281,7 +282,6 @@ public class ScreenOne extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton newInvoiceButton;
-    private javax.swing.JButton saveButton;
     // End of variables declaration//GEN-END:variables
 
     private ArrayList<InvoicesTable> invoices;

@@ -96,10 +96,10 @@
               <Component id="newInvoiceButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Component id="deleteInvoiceButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
-              <Component id="saveButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-              <Component id="cancelButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
+              <Component id="createNewItemButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+              <Component id="deleteItemButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -144,8 +144,8 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="newInvoiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="deleteInvoiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="saveButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="createNewItemButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="deleteItemButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
           </Group>
@@ -244,20 +244,20 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="saveButton">
+    <Component class="javax.swing.JButton" name="createNewItemButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Save"/>
+        <Property name="text" type="java.lang.String" value="Create New Item"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="saveButton.addActionListener(control);&#xd;&#xa;"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="createNewItemButton.addActionListener(control);&#xd;&#xa;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="cancelButton">
+    <Component class="javax.swing.JButton" name="deleteItemButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cancel"/>
+        <Property name="text" type="java.lang.String" value="Delete Item"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="cancelButton.addActionListener(control);&#xd;&#xa;"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="deleteItemButton.addActionListener(control);&#xd;&#xa;"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="invoiceNoLabel">
